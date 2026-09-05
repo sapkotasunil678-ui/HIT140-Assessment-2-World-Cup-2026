@@ -7,3 +7,6 @@ Do teams that advanced past the group stage have significantly higher average po
 
 data about: Possession
 test: Two-sample t-test
+
+Data source: FBref - 2026 World Cup Possession Stats
+Website: https://fbref.com/en/comps/1/possession/World-Cup-Stats
