@@ -1,0 +1,9 @@
+Student: Rejan Sapkota
+
+Topic: Average ball possession
+
+ question:
+Do teams that advanced past the group stage have significantly higher average possession than teams eliminated in the group stage?
+
+data about: Possession
+test: Two-sample t-test
