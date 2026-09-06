@@ -64,7 +64,7 @@ def main():
             "Scope": "Whole tournament (includes knockout matches)",
             "Source_URL": SOURCE,
         })
-    output = DATA / "Rejan_FBref_Whole_Tournament_Possession.csv"
+    output = DATA / "data.csv"
     with output.open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(records[0]))
         writer.writeheader()
