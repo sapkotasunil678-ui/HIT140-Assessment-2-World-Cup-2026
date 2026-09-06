@@ -1,4 +1,4 @@
-"""Extract the saved FBref squad table into csv."""
+"""Convert the FBref squad table to CSV."""
 import csv
 from html.parser import HTMLParser
 from pathlib import Path

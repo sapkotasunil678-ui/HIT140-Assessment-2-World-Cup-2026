@@ -1,8 +1,4 @@
-"""Clean the extracted CSV using Python's standard library.
-
-Keep whole-tournament scope. Do not invent advancement labels or missing values.
-Run this file from Python, Anaconda Prompt, or a Jupyter notebook with %run.
-"""
+"""Clean and validate possession data."""
 import csv
 import math
 import re
@@ -25,20 +21,19 @@ def clean():
     cleaned, seen_rows, seen_teams = [], set(), set()
     duplicates = 0
     for line, row in enumerate(raw, start=2):
-        # Strip surrounding spaces without changing the original source file.
+        # Trim spaces.
         row = {key: (row.get(key) or "").strip() for key in columns}
         if any(not value for value in row.values()):
             raise ValueError(f"Missing data on line {line}; check the source webpage.")
 
-        # Remove only exact duplicate records, never conflicting team records.
+        # Skip exact duplicates.
         identity = tuple(row[key] for key in columns)
         if identity in seen_rows:
             duplicates += 1
             continue
         seen_rows.add(identity)
 
-        # FBref displays a flag code before the team name, e.g. 'dz Algeria'.
-        # Preserve the original label and store its code separately.
+        # Split flag code and team name.
         match = re.fullmatch(r"([a-z]{2,3})\s+(.+)", row["Squad_As_Displayed"])
         if not match:
             raise ValueError(f"Unexpected team label on line {line}.")
