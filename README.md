@@ -22,3 +22,7 @@ All data wrangling and analysis were carried out in Python (pandas, scipy, matpl
 | 3 | Is there a significant difference in average goalkeeper saves per 90 minutes between teams that reached the knockout stage and teams eliminated in the group stage? | Sunil Sapkota | Two-sample t-test |
 | 4 | Do teams that advanced past the group stage have significantly higher average possession than teams eliminated in the group stage? | Rejan Sapkota | Two-sample t-test |
 
+## Unit Information
+- **Unit:** HIT140 — Foundations of Data Science
+- **Assessment:** Assessment 2 — Group Project Presentation (Objective 1)
+- **Institution:** Charles Darwin University
