@@ -8,8 +8,10 @@ Each task follows the same six-step data science pipeline:
 
 All data wrangling and analysis were carried out in Python (pandas, scipy, matplotlib). Excel was used only for preparing raw datasets, per the assessment brief.
 
-## Data Source
-[FBref — FIFA World Cup 2026 Statistics](https://fbref.com/en/comps/1/World-Cup-Stats)
+## Data Sources
+- [FIFA Official Website](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/statistics)
+- [The Stats Don't Lie](https://www.thestatsdontlie.com/football/world-cup-2026/)
+- [FBref](https://fbref.com/en/)
 
 ## Group Members & Tasks
 
